@@ -24,7 +24,14 @@ const ItemDetailContainer = () => {
       });
   }, [itemId]);
 
-  return <div className="ItemDetailContainer d-flex justify-content-center pt-3">{loading ? <ItemLoading text="Loading..." /> : <ItemDetail {...product} />}</div>;
+  return (
+    <>
+      <div className="pt-3">
+        <h3>Detalle</h3>
+      </div>
+      <div className="ItemDetailContainer d-flex justify-content-center pt-3">{loading ? <ItemLoading text="Loading..." /> : <ItemDetail {...product} />}</div>
+    </>
+  );
 };
 
 export default ItemDetailContainer;

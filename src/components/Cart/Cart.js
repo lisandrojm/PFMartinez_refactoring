@@ -63,7 +63,7 @@ const Cart = () => {
             </div>
           </Link>
           <Link to="/checkout" className="Option text-decoration-none text-white">
-            <div className="pt-3 d-grid gap-2">
+            <div className="pt-3 d-grid gap-2 pb-3">
               <Button variant="dark">Checkout</Button>
             </div>
           </Link>
